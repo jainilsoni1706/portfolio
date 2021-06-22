@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainil's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="j.png">
+    <script src="main.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://khang-nd.github.io/7.css/script.js"></script>
+</head>
+<body>
+
+    <!-- jquery and internal js -->
+    <script>
+        
+$(document).ready(function(){
+
+$('.w').hover(function(){
+document.querySelector('.w').src = "g.png";
+});
+
+$('.e').hover(function(){
+document.querySelector('.e').src = "r.png";
+});
+
+$('.l').hover(function(){
+document.querySelector('.l').src = "e.png";
+});
+
+$('.c').hover(function(){
+document.querySelector('.c').src = "e.png";
+});
+
+$('.o').hover(function(){
+document.querySelector('.o').src = "t.png";
+});
+
+$('.m').hover(function(){
+document.querySelector('.m').src = "i.png";
+});
+
+$('.e2').hover(function(){
+document.querySelector('.e2').src = "n.png";
+document.querySelector('.g2').style.display = "block";
+});
+
+
+
+$('#coin').on('click', function(){
+  var flipResult = Math.random();
+  $('#coin').removeClass();
+  setTimeout(function(){
+    if(flipResult <= 0.5){
+      $('#coin').addClass('heads');
+    }
+    else{
+      $('#coin').addClass('heads');
+    }
+  }, 100);
+});
+
+
+
+var COuNt = 0;
+$('#coin').click(function(){
+    COuNt++;
+    console.log(COuNt);
+});
+
+
+$('.NaVMeNu').click(function(){
+document.querySelector('.ShowHideNaV').style.display = "block";
+  document.querySelector('.NaVMeNu').style.display = "none";
+  document.querySelector('.NaVMeNu2').style.display = "block";
+});
+
+$('.NaVMeNu2').click(function(){
+  document.querySelector('.ShowHideNaV').style.display = "none";
+  document.querySelector('.NaVMeNu').style.display = "block";
+  document.querySelector('.NaVMeNu2').style.display = "none";
+  document.querySelector('.ShowHideNaV1').style.display = "none";
+});
+
+$('.ProJeCtS').click(function(){
+  document.querySelector('.ShowHideNaV1').style.display = "block";
+});
+
+$('.ProJeCtS').dblclick(function(){
+  document.querySelector('.ShowHideNaV1').style.display = "none";
+});
+
+$('.ClosEMessaGe').click(function(){
+  document.querySelector('.MessAgeBoxOUTER').style.display = "none";
+});
+
+
+$('.GaMEBTnnn').click(function(){
+  document.querySelector('.GaMeSSeC').style.display = "block";
+});
+
+$('.GaMEBTnnn').dblclick(function(){
+  document.querySelector('.GaMeSSeC').style.display = "none";
+});
+
+$('.GaMesPaRT').click(function(){
+  document.querySelector('.GamesPlate').style.display = "block";
+  let inf1 = document.querySelector('.InformationContainer').style.display = "block";
+let game1 = document.querySelector('.GamesPlate').style.display = "block";
+
+if(inf1&&game1){
+  let game1 = document.querySelector('.InformationContainer').style.display = "none";
+}
+
+});
+
+
+$('.KNoWLeDGePaRT').click(function(){
+  document.querySelector('.InformationContainer').style.display = "block";
+
+  let inf1 = document.querySelector('.InformationContainer').style.display = "block";
+let game1 = document.querySelector('.GamesPlate').style.display = "block";
+
+if(inf1&&game1){
+  let game1 = document.querySelector('.GamesPlate').style.display = "none";
+}
+
+});
+
+
+
+$('.GaMesPaRT').dblclick(function(){
+  document.querySelector('.GamesPlate').style.display = "none";
+  $('.GamesPlate').hide();
+});
+
+
+$('.KNoWLeDGePaRT').dblclick(function(){
+  document.querySelector('.InformationContainer').style.display = "none";
+});
+
+
+
+PrimE = () =>{
+
+
+
+var PrimeNO = document.querySelector('.PrimeNoGame').value;
+
+
+if(PrimeNO==2 || PrimeNO==3){
+  document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is a Prime Number";
+}
+
+else if(PrimeNO%2==0 || PrimeNO%3==0){
+document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is not a Prime Number";
+}
+
+
+else{
+    document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is a Prime Number";
+}
+
+}
+
+
+$('.GaMeEe1').click(function(){
+  document.querySelector('.PrimeNumberGame').style.display = "block";
+  $('.GamesPlate').hide();
+  $('.GueSsNumberGame').hide();
+  $('.ReMoVeEvenGame').hide();
+
+});
+
+
+
+	
+let RandNo = Math.floor(Math.random() * 100 + 1);
+
+GuesS = () => {
+
+
+let Guesss = document.querySelector('.GueSSvAlue').value;
+console.log(RandNo);
+
+do{
+	if(Guesss==RandNo){
+		document.querySelector('.AnswerOfGame2').innerHTML = "You got correct one!"
+		break;
+	}
+
+	else if(Guesss>RandNo){
+		document.querySelector('.AnswerOfGame2').innerHTML = "Choose Lesser one!";
+		break;
+	}
+
+	else{
+    document.querySelector('.AnswerOfGame2').innerHTML = "Choose Grater one!";
+		break;
+	}
+	
+
+}
+while(Guesss!=RandNo);
+
+}
+
+
+
+
+
+
+$('.GaMeEe2').click(function(){
+  document.querySelector('.GueSsNumberGame').style.display = "block";
+  $('.GamesPlate').hide();
+  $('.InformationContainer').hide();
+});
+
+
+$('.GaMeEe2').click(function(){
+  document.querySelector('.PrimeNumberGame').style.display = "block";
+  $('.GamesPlate').hide();
+  $('.PrimeNumberGame').hide();
+  $('.InformationContainer').hide();
+
+});
+
+$('.InformationContainer').click(function(){
+  $('.GueSsNumberGame').hide();
+  $('.GamesPlate').hide();
+  $('.PrimeNumberGame').hide();
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+    </script>
+    <!-- jquery and internal js -->
+
+
+
+
+
+
+
+
+
+    <!-- Loading -->
+
+<div class="row_LoadingLine">
+
+</div>
+
+<div class="Loading_Letters">
+    <img src="w.png" class="Letters  w">
+    <img src="e.png" class="Letters  e">
+    <img src="l.png" class="Letters  l">
+    <img src="c.png" class="Letters  c">
+    <img src="o.png" class="Letters  o">
+    <img src="m.png" class="Letters  m">
+    <img src="e.png" class="Letters  e2">
+    <img src="g2.png" class="Letters  g2" style="display: none;">
+</div>
+
+    <!-- Loading -->
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+
+<main>
+
+<!-- Navbar -->
+
+
+<nav>
+    <div id="coin">
+    <img src="witch.png" class="logoMain">
+    </div>
+
+
+    <div class="coin1">
+    <img src="a.png" class="Let_ters">
+    </div>
+    <div class="coin1">
+    <img src="i.png" class="Let_ters">
+    </div>
+    <div class="coin1">
+    <img src="n.png" class="Let_ters">
+    </div>
+    <div class="coin1">
+    <img src="i.png" class="Let_ters">
+    </div>
+    <div class="coin1">
+    <img src="l.png" class="Let_ters">
+    </div>
+
+
+    <input type="image" src="menu.png" class="NaVMeNu">
+    <input type="image" src="menu.png" class="NaVMeNu2">
+
+
+    <div class="MainBtnBoX">
+      <div class="NavBtnBorder">
+<a href="#PRoFiLeS"><button class="NavBtn"> Profile </button> </a>
+      </div>
+
+      <div class="NavBtnBorder">
+  <button class="NavBtn  ProJeCtS"> Projects </button>
+      </div>
+
+      <div class="NavBtnBorder">
+    <a href="#Contact__us"><button class="NavBtn"> Contact </button> </a>
+      </div>
+
+      <div class="NavBtnBorder">
+      <a href="#GAMESECTION"><button class="NavBtn  GaMEBTnnn"> Games </button> </a>
+      </div>
+</div>
+
+</nav>
+<br><br>
+
+
+<!-- Navbar -->
+
+
+
+
+<div class="ShowHideNaV">
+<div class="HoverEdMenU">
+  <div class="NavBtnBorder1">
+    <a href="#PRoFiLeS"><button class="NavBtn1"> Profile </button> </a>
+          </div>
+    
+          <div class="NavBtnBorder1">
+      <button class="NavBtn1  ProJeCtS"> Projects </button>
+          </div>
+    
+          <div class="NavBtnBorder1">
+        <a href="#Contact__us"><button class="NavBtn1"> Contact </button> </a>
+          </div>
+    
+          <div class="NavBtnBorder1">
+          <a href="#GAMESECTION"><button class="NavBtn1  GaMEBTnnn"> Games </button> </a>
+          </div>
+</div>
+</div>
+
+
+
+<div class="ShowHideNaV1">
+<div class="HoverEdMenU">
+  <div class="NavBtnBorder1">
+    <a href="https://jainilsoni1706.github.io/jass/getJASS.htm"><button class="NavBtn1"> JASS CSS Framework <br> 2021 </button> </a>
+          </div>
+    
+          <div class="NavBtnBorder1">
+      <a href="https://jainilsoni1706.github.io/j/jainil.htm"><button class="NavBtn1">  Jainil Movies <br> 2021 </button> </a>
+          </div>
+    
+          <div class="NavBtnBorder1">
+        <a href="http://jainilsoni1706.github.io/j/Jphone.htm"><button class="NavBtn1"> Phone Model <br> 2021 </button> </a>
+          </div>
+    
+          <div class="NavBtnBorder1">
+          <a href="https://jainilsoni1706.github.io/Jainilsoni01/Instagram.htm"><button class="NavBtn1"> Instagram Login Clone <br> 2021 </button> </a>
+          </div>
+</div>
+</div>
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+<div class="FraMeEe" id="PRoFiLeS">
+  <img src="Jainil2.jpg" draggable="false" alt="Jainil" class="MaiNProfileImg">
+
+
+<div class="HeaDnAmE">
+  Jainil Soni
+</div>
+
+<div class="HeaDdEtail">
+  Hey peeps! i am<strong> Jainil Soni</strong>.
+  I live in india. i am the student of IT field and now i'm doing my bachelor's in Computer application. 
+  I love to solve problems and discover solution for problems on my own,  I like to programming in c++ and javascript. 
+  My skills are html,css,js,jquery,bootstrap,php,c and c++,that's it.
+
+</div>
+
+</div>
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<div class="BLaCKDiV">
+
+  <div class="HeaDiNGMaiN" id="Contact__us">
+    Contact Me / Follow Me
+  </div>
+
+
+<div class="CoNTaCTuS">
+    <a href="https://www.instagram.com/jainilsoni_1706/"> <img src="insta.png" title="Instagram" class="cusimg">  </a>
+      <a href="https://www.youtube.com/channel/UCWAe_FOUEkAQb0Kzy0Sng_A"> <img src="yta.png" title="Youtube" class="cusimg"> </a>
+        <a href="mailto:jainilsoni1706@gmail.com"> <img src="email.png" title="Email" class="cusimg"> </a>
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+<div class="FleXRow">
+<div class="GaMeSSeC" id="GAMESECTION">
+  <input type="image" src="games.png" title="Games" class="gameBTNs  GaMesPaRT">
+  <input type="image" src="knowledge.png" title="Information" class="gameBTNs  KNoWLeDGePaRT">
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- games -->
+<div class="GamesContainer">
+
+
+<div class="GamesPlate">
+<div class="SelectTheGame   GaMeEe1"> Find The Prime Number </div>
+<div class="SelectTheGame   GaMeEe2"> Guess The Number </div>
+</div>
+
+
+<!-- prime -->
+<div class="PrimeNumberGame">
+<div class="aBoXxX">
+
+
+  <div class="InNeRtExT">
+    Enter a Number:
+  </div>
+  
+<input type="number" class="GamesInPuT  PrimeNoGame">
+
+<div class="AnswerOfGame"></div>
+
+<button class="ResBtn" onclick="PrimE()"> Snap </button>
+
+</div>
+</div>
+<!-- prime -->
+
+<!-- guessThenum -->
+
+
+<div class="GueSsNumberGame">
+  <div class="aBoXxX">
+  
+  
+    <div class="InNeRtExT">
+      Guess a Number:
+    </div>
+    
+  <input type="number" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Between 1-100"  class="GamesInPuT  GueSSvAlue">
+  
+  <div class="AnswerOfGame2"></div>
+  
+  <button class="ResBtn" onclick="GuesS()"> Snap </button>
+  
+  </div>
+  </div>
+
+
+<!-- guessThenum -->
+
+
+
+</div>
+<!-- games -->
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- knowledge -->
+<div class="InformationContainer">
+
+  <div class="SelectTheGame"> Information of Programming languages and Their Frameworks </div>
+
+<div class="MainInfBoXxX">
+
+
+
+  <div class="InfBoXxX">
+<img src="angular.png" class="InfoImgg">
+<div class="infoHeadd"> Angular </div>
+<div class="infosubhead"> Web Framework </div>
+<div class="infoDetail">
+  Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
+</div>
+<div class="infosubhead"> Web Development </div>
+  </div>
+
+
+
+  
+  <div class="InfBoXxX">
+    <img src="clanguage.png" class="InfoImgg">
+    <div class="infoHeadd"> C Language </div>
+    <div class="infosubhead"> Programming Language </div>
+    <div class="infoDetail">
+      C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions
+    </div>
+    <div class="infosubhead"> Database System , Operating system development , Compilers and Assemblers. </div>
+      </div>
+
+
+
+
+
+      <div class="InfBoXxX">
+        <img src="cpp.png" class="InfoImgg">
+        <div class="infoHeadd"> C++ </div>
+        <div class="infosubhead"> Programming Language </div>
+        <div class="infoDetail">
+          C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".
+        </div>
+        <div class="infosubhead"> Game Development , Operating system development , GUI Based Applications. </div>
+          </div>
+
+
+          <div class="InfBoXxX">
+            <img src="csharp.png" class="InfoImgg">
+            <div class="infoHeadd"> C# </div>
+            <div class="infosubhead"> Programming Language </div>
+            <div class="infoDetail">
+              C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.
+            </div>
+            <div class="infosubhead"> Game Development , Web Application Development , Windows Applications. </div>
+              </div>
+    
+              <div class="InfBoXxX">
+                <img src="css.png" class="InfoImgg">
+                <div class="infoHeadd"> CSS </div>
+                <div class="infosubhead"> Markup Language </div>
+                <div class="infoDetail">
+                  Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                </div>
+                <div class="infosubhead"> define the styles to web pages. </div>
+                  </div>
+
+                  <div class="InfBoXxX">
+                    <img src="django.png" class="InfoImgg">
+                    <div class="infoHeadd"> Django </div>
+                    <div class="infosubhead"> Web framework </div>
+                    <div class="infoDetail">
+                      Django is a Python-based free and open-source web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an American independent organization established as a 501 non-profit.
+                    </div>
+                    <div class="infosubhead"> Web Development. </div>
+                      </div>
+
+
+                      <div class="InfBoXxX">
+                        <img src="flask.png" class="InfoImgg">
+                        <div class="infoHeadd"> Flask </div>
+                        <div class="infosubhead"> Web framework </div>
+                        <div class="infoDetail">
+                          Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
+                        </div>
+                        <div class="infosubhead"> Web Development. </div>
+                          </div>
+
+
+
+                          <div class="InfBoXxX">
+                            <img src="java.png" class="InfoImgg">
+                            <div class="infoHeadd"> Java </div>
+                            <div class="infosubhead"> Programming Language </div>
+                            <div class="infoDetail">
+                              Java is a set of computer software and specifications developed by James Gosling at Sun Microsystems, which was later acquired by the Oracle Corporation, that provides a system for developing application software and deploying it in a cross-platform computing environment.
+                            </div>
+                            <div class="infosubhead"> Mobile Application ,  Web Application , Game Development. </div>
+                              </div>
+    
+
+
+                              <div class="InfBoXxX">
+                                <img src="javascript.png" class="InfoImgg">
+                                <div class="infoHeadd"> JavaScript </div>
+                                <div class="infosubhead"> Programming Language </div>
+                                <div class="infoDetail">
+                                  JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                                </div>
+                                <div class="infosubhead"> Mobile Application ,  Web Application , Back-end Development. </div>
+                                  </div>
+
+
+
+                                  <div class="InfBoXxX">
+                                    <img src="jquery.png" class="InfoImgg">
+                                    <div class="infoHeadd"> jquery </div>
+                                    <div class="infosubhead"> JavaScript Library</div>
+                                    <div class="infoDetail">
+                                      jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites.
+                                    </div>
+                                    <div class="infosubhead"> Web Development. </div>
+                                      </div>
+
+                                      <div class="InfBoXxX">
+                                        <img src="kotlin.png" class="InfoImgg">
+                                        <div class="infoHeadd"> Kotlin </div>
+                                        <div class="infosubhead"> Programming Language </div>
+                                        <div class="infoDetail">
+                                          Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.
+                                        </div>
+                                        <div class="infosubhead"> App Development. Android Development. </div>
+                                          </div>
+
+                                          <div class="InfBoXxX">
+                                            <img src="laravel.png" class="InfoImgg">
+                                            <div class="infoHeadd"> Laravel </div>
+                                            <div class="infosubhead"> PHP Framework </div>
+                                            <div class="infoDetail">
+                                              Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony.
+                                            </div>
+                                            <div class="infosubhead"> Web Development.  </div>
+                                              </div>
+
+                                              <div class="InfBoXxX">
+                                                <img src="mysql.png" class="InfoImgg">
+                                                <div class="infoHeadd"> MySQL </div>
+                                                <div class="infosubhead"> Database Language </div>
+                                                <div class="infoDetail">
+                                                  MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.
+                                                </div>
+                                                <div class="infosubhead"> Web Development. </div>
+                                                  </div>
+
+                                              <div class="InfBoXxX">
+                                                <img src="nodejs.png" class="InfoImgg">
+                                                <div class="infoHeadd"> Node JS </div>
+                                                <div class="infosubhead"> JS Back-end Framework </div>
+                                                <div class="infoDetail">
+                                                  Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+                                                </div>
+                                                <div class="infosubhead"> Web Development . Back-end Development. </div>
+                                                  </div>
+
+
+
+
+                                                  <div class="InfBoXxX">
+                                                    <img src="perl.png" class="InfoImgg">
+                                                    <div class="infoHeadd"> Perl </div>
+                                                    <div class="infosubhead"> Programming Language</div>
+                                                    <div class="infoDetail">
+                                                      Perl is a family of two high-level, general-purpose, interpreted, dynamic programming languages. "Perl" refers to Perl 5, but from 2000 to 2019 it also referred to its redesigned "sister language", Perl 6, before the latter's name was officially changed to Raku in October 2019.
+                                                    </div>
+                                                    <div class="infosubhead"> Web Development , network programming , GUI development. </div>
+                                                      </div>
+                                                     
+
+
+                                                      <div class="InfBoXxX">
+                                                        <img src="php.png" class="InfoImgg">
+                                                        <div class="infoHeadd"> PHP </div>
+                                                        <div class="infosubhead"> Programming Language</div>
+                                                        <div class="infoDetail">
+                                                          PHP is a general-purpose scripting language especially suited to web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994. The PHP reference implementation is now produced by The PHP Group.
+                                                        </div>
+                                                        <div class="infosubhead"> Web Development. </div>
+                                                          </div>
+
+
+                                                            <div class="InfBoXxX">
+                                                              <img src="python.png" class="InfoImgg">
+                                                              <div class="infoHeadd"> Python </div>
+                                                              <div class="infosubhead"> Programming Language</div>
+                                                              <div class="infoDetail">
+                                                                Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.
+                                                              </div>
+                                                              <div class="infosubhead"> Web Development , Machine Learning , Artificial Intelligence. </div>
+                                                                </div>
+
+
+  <div class="InfBoXxX">
+   <img src="react.png" class="InfoImgg">
+ <div class="infoHeadd"> React </div>
+ <div class="infosubhead"> JS Library </div>
+ <div class="infoDetail">
+  React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
+  </div>
+ <div class="infosubhead"> Web-App Development. </div>
+  </div>
+                
+
+
+
+
+  <div class="InfBoXxX">
+    <img src="ruby.png" class="InfoImgg">
+  <div class="infoHeadd"> Ruby </div>
+  <div class="infosubhead"> Programming Language</div>
+  <div class="infoDetail">
+    Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection and just-in-time compilation.
+   </div>
+  <div class="infosubhead"> Web Development , Data Analysis. </div>
+   </div>
+                 
+ 
+ 
+ 
+   <div class="InfBoXxX">
+    <img src="rubyonrails.png" class="InfoImgg">
+  <div class="infoHeadd"> Ruby on Rails </div>
+  <div class="infosubhead"> Ruby Framework </div>
+  <div class="infoDetail">
+    Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages.
+   </div>
+  <div class="infosubhead"> Web Development , Data Analysis. </div>
+   </div>
+                 
+ 
+ 
+ 
+ 
+ 
+   <div class="InfBoXxX">
+    <img src="sass.png" class="InfoImgg">
+  <div class="infoHeadd"> SASS </div>
+  <div class="infosubhead"> Programming Language </div>
+  <div class="infoDetail">
+    Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets. SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called "the indented syntax," uses a syntax similar to Haml.
+   </div>
+  <div class="infosubhead"> define the styles to web pages. </div>
+   </div>
+                 
+ 
+ 
+ 
+   <div class="InfBoXxX">
+    <img src="scala.png" class="InfoImgg">
+  <div class="infoHeadd"> Scala </div>
+  <div class="infosubhead"> Programming Language </div>
+  <div class="infoDetail">
+    Scala is a strong statically typed general-purpose programming language which supports both object-oriented programming and functional programming. Designed to be concise, many of Scala's design decisions are aimed to address criticisms of Java.
+   </div>
+  <div class="infosubhead"> Software Development </div>
+   </div>
+                 
+ 
+ 
+
+
+ 
+   <div class="InfBoXxX">
+    <img src="vue.png" class="InfoImgg">
+  <div class="infoHeadd"> Vue </div>
+  <div class="infosubhead"> JS Framework </div>
+  <div class="infoDetail">
+    Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members.
+   </div>
+  <div class="infosubhead"> Web Development. </div>
+   </div>
+                 
+ 
+ 
+ 
+ 
+ 
+   <div class="InfBoXxX">
+    <img src="swift.png" class="InfoImgg">
+  <div class="infoHeadd"> Swift </div>
+  <div class="infosubhead"> Programming Language </div>
+  <div class="infoDetail">
+    Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community.
+   </div>
+  <div class="infosubhead"> Mobile and Desktop Application Development </div>
+   </div>
+                 
+ 
+ 
+ 
+   <div class="InfBoXxX">
+    <img src="typescript.png" class="InfoImgg">
+  <div class="infoHeadd"> TypeScript </div>
+  <div class="infosubhead"> Programming Language </div>
+  <div class="infoDetail">
+    TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. TypeScript is designed for the development of large applications and transcompiles to JavaScript
+   </div>
+  <div class="infosubhead"> Back-end Development , Web Development. </div>
+   </div>
+                 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+<!-- knowledge -->
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+
+<!-- 
+<div class="MessAgeBoxOUTER">
+  <div class="MessAgeBox">
+  
+      <div class="TiTlEbAR">
+    <div class="PoPuPTiTLE"> Message from Jainil </div>
+    <button class="ClosEMessaGe"> ✖ </button>
+      </div>
+  <div class="SaYsHeLlO">
+    <strong>JAINIL</strong>  Says Hello to
+  </div>
+  
+  
+  <div class="InNeRtExT">
+    Enter the total letter size of your name:
+  </div>
+  
+  <input type="number" placeholder="&nbsp;&nbsp;eg:6" class="InpuTnAmE ">
+  
+  
+   
+  
+  <div class="NavBtnBorder1">
+   <button class="NavBtn2" onclick="SubMitLettEr()"> Submit </button>
+  </div>
+  
+  
+  <script>
+  
+  
+  SubMitLettEr = () => {
+  
+  let Num =  document.querySelector('.InpuTnAmE').value;
+  
+    if(Num.length>1){
+  alert("OOPS.....Something went wrong")
+    }
+  
+  
+  
+  if(Num>10){
+    alert("OOPS.....Not valid size");
+  }
+  
+  let SizEofEle = Num;
+  for (let i = 0; i < SizEofEle; i++) {
+       let ActSiZe = document.createElement('input');
+       ActSiZe.type = "text";
+       ActSiZe.maxLength = "1";
+       ActSiZe.style.height = "10px";
+       ActSiZe.style.width = "10px";
+       ActSiZe.style.border = "2px solid";
+       ActSiZe.style.borderRadius = "0px";
+       ActSiZe.style.marginRight = "5px";
+       ActSiZe.style.fontWeight = "900";
+       ActSiZe.style.marginTop = "20px";
+       ActSiZe.style.textTransform = "uppercase";
+       ActSiZe.setAttribute('class','SizEEE');
+       document.querySelector('.NamEbOX').appendChild(ActSiZe);
+  }
+  
+  
+  
+  
+  for (let i = 0; i < SizEofEle; i++) {
+       let ActSiZe2 = document.createElement('img');
+       ActSiZe2.style.height = "50px";
+       ActSiZe2.style.width = "50px";
+       ActSiZe2.style.marginRight = "5px";
+       document.querySelector('.ReALNamEbOX').appendChild(ActSiZe2);
+  }
+  
+  let AnEWW = document.querySelector('.SizEEE').value;
+  
+  
+  
+  a = "a.png";
+  b = "b.png";
+  c = "c.png"; 
+  d = "d.png";
+  e = "e.png";
+  f = "f.png"
+  g = "g.png";
+  h = "h.png";
+  i = "i.png";
+  j = "j.png";
+  k = "k.png";
+  l = "l.png";
+  m = "m.png";
+  n = "n.png";
+  o = "o.png";
+  p = "p.png";
+  q = "q.png";
+  r = "r.png";
+  s = "s.png";
+  t = "t.png";
+  u = "u.png";
+  v = "v.png";
+  w = "w.png";
+  x = "x.png";
+  y = "y.png";
+  z = "z.png";
+  
+  
+  
+  
+  if(SizEEE=="a" || SizEEE=="A"){
+    ActSiZe2.src = a;
+  }
+  
+  else if(SizEEE=="b" || SizEEE=="B"){
+    ActSiZe2.src = b;
+  }
+  
+  else if(SizEEE=="c" || SizEEE=="C"){
+    ActSiZe2.src = c;
+  }
+  else if(SizEEE=="d" || SizEEE=="D"){
+    ActSiZe2.src = d;
+  }
+  else if(SizEEE=="e" || SizEEE=="E"){
+    ActSiZe2.src = e;
+  }
+  else if(SizEEE=="f" || SizEEE=="F"){
+    ActSiZe2.src = f;
+  }
+  else if(SizEEE=="g" || SizEEE=="G"){
+    ActSiZe2.src = g;
+  }
+  else if(SizEEE=="h" || SizEEE=="H"){
+    ActSiZe2.src = h;
+  }
+  else if(SizEEE=="i" || SizEEE=="I"){
+    ActSiZe2.src = i;
+  }
+  else if(SizEEE=="j" || SizEEE=="J"){
+    ActSiZe2.src = j;
+  }
+  else if(SizEEE=="k" || SizEEE=="K"){
+    ActSiZe2.src = k;
+  }
+  else if(SizEEE=="l" || SizEEE=="L"){
+    ActSiZe2.src = l;
+  }
+  else if(SizEEE=="m" || SizEEE=="M"){
+    ActSiZe2.src = m;
+  }
+  else if(SizEEE=="n" || SizEEE=="N"){
+    ActSiZe2.src = n;
+  }
+  else if(SizEEE=="o" || SizEEE=="O"){
+    ActSiZe2.src = o;
+  }
+  else if(SizEEE=="p" || SizEEE=="P"){
+    ActSiZe2.src = p;
+  }
+  else if(SizEEE=="q" || SizEEE=="Q"){
+    ActSiZe2.src = q;
+  }
+  else if(SizEEE=="r" || SizEEE=="R"){
+    ActSiZe2.src = r;
+  }
+  else if(SizEEE=="s" || SizEEE=="S"){
+    ActSiZe2.src = s;
+  }
+  else if(SizEEE=="t" || SizEEE=="T"){
+    ActSiZe2.src = t;
+  }
+  else if(SizEEE=="u" || SizEEE=="U"){
+    ActSiZe2.src = u;
+  }
+  else if(SizEEE=="v" || SizEEE=="V"){
+    ActSiZe2.src = v;
+  }
+  else if(SizEEE=="w" || SizEEE=="W"){
+    ActSiZe2.src = w;
+  }
+  else if(SizEEE=="x" || SizEEE=="X"){
+    ActSiZe2.src = x;
+  }
+  else if(SizEEE=="y" || SizEEE=="Y"){
+    ActSiZe2.src = y;
+  }
+  else if(SizEEE=="z" || SizEEE=="Z"){
+    ActSiZe2.src = z;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  </script>
+  
+  
+  <div class="InNeRtExT">
+    Enter your name:
+  </div>
+  
+  <div class="NamEbOX">
+  
+  </div>
+  
+  
+  <div class="ReALNamEbOX">
+  
+  </div>
+  
+  
+  
+  
+  
+  </div> 
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  </div> -->
+  
+  <!-- Windows -->
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<div class="ENDcpyRights">
+  <div class="Cpyrytstxt">
+    Jainil Soni Copyrights &COPY; 2021 
+  </div>
+</div>
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- fonts -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+<!-- fonts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
