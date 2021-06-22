@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --Blue:#000b76;
+    --yellow:#ffd700;
+    --pink:#e7008a;
+    --orange:#ff5500;
+    --green:#00cba2;
+    --purple:#5000ca;
+    --black:#273036;
+    --white:#f3f4f5;
+    --lightblue:#a2d9ff;
+}
+
+@media screen and (max-width:420px) and (max-height:740px){
+    
+
+    .Letters{
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+@media screen and (max-width:760px) and (max-height:1340px){
+    nav{
+        background: var(--black);
+    }
+
+
+}
+
+
+@media screen and (max-width:800px) and (max-height:1300px){
+ 
+    .MainBtnBoX{
+        display: none;
+    }
+    .NaVMeNu{
+        display: block;
+    }
+
+}

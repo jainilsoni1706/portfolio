@@ -1,0 +1,703 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,#5000ca,#000b76);
+    font-family: 'Cinzel', serif;
+    /* animation: LoadingScreen 10s 1; */
+    
+
+}
+
+
+button{
+  font-family: 'Cinzel', serif;
+  font-family: 700;
+}
+
+main{
+  display: none;
+}
+
+
+:root{
+    --Blue:#000b76;
+    --yellow:#ffd700;
+    --darkyellow:#fc9904;
+    --pink:#e7008a;
+    --orange:#ff5500;
+    --green:#00cba2;
+    --purple:#5000ca;
+    --black:#273036;
+    --white:#f3f4f5;
+    --lightblue:#a2d9ff;
+}
+
+.Loading_Letters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
+.Letters{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    padding: 4px;
+    margin: 4px;
+    border: 3px solid var(--white);
+    cursor: pointer;
+    box-shadow: 3px 3px 7px var(--white);
+    position: relative;
+    top: 40vh;
+    animation: fadeLetters 10s 1;
+    z-index: 2;
+}
+
+.row_LoadingLine{
+    height: 100vh;
+    width: 80vw;
+    background: whitesmoke;
+    opacity: 0.2;
+    float: right;
+    animation: MoveLoadingLine 10s 1;
+}
+
+nav{
+    height: 15vh;
+    width: 100vw;
+    background: var(--black);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.logoMain{
+    height: 10vh;
+    width: 10vh;
+    margin-left: 3vw;
+    cursor: pointer;
+    margin-right: 3vw;
+}
+
+
+.ShowHideNaV1{
+  display: none;
+}
+
+
+button{
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+.Let_ters{
+  height: 5vh;
+  width: 5vh;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.infoDetail{
+  overflow-y: scroll;
+}
+
+.infosubhead{
+  margin: 5px 0px 15px 0px;
+  font-weight: 700;
+}
+
+
+.infoHeadd{
+  margin: 5px 0px 15px 0px;
+  font-weight: 900;
+}
+
+
+.MainInfBoXxX{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.InfoImgg{
+  height: 12vh;
+  width: 12vh;
+  margin-bottom: 10px;
+}
+
+.InfBoXxX{
+  border-radius: 10px;
+  border: 1px solid;
+  width: 70vw;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+
+
+.GueSsNumberGame{
+  display: none;
+}
+
+.PrimeNumberGame{
+  display: none;
+}
+
+
+
+.ResBtn{
+  margin: 10px 3px 10px 3px;
+  border-radius: 0;
+  padding: 5px;
+  margin: 5px;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}
+
+.AnswerOfGame2{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AnswerOfGame{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.GamesInPuT{
+  border: none;
+  border-bottom: 3px solid var(--black);
+  background: transparent;
+}
+
+
+.aBoXxX{
+  border: 3px solid var(--black);
+  padding: 25px 10px 10px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+
+.GamesPlate{
+  display: none;
+
+}
+
+
+.SelectTheGame{
+  background: var(--black);
+  color: var(--white);
+  padding: 7px;
+  margin: 3px 0px 18px 0px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.InformationContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  display: none;
+  text-align: center;
+}
+
+
+
+.GamesContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+
+
+
+.GaMeSSeC{
+  display: none;
+}
+
+
+
+
+
+.Cpyrytstxt{
+  font-size: 15px;
+  padding: 10px 0px 10px 0px;
+  flex-wrap: wrap;
+}
+
+
+.ENDcpyRights{
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  
+}
+
+
+
+.FleXRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+
+
+
+
+
+.gameBTNs:hover{
+border: 3px dashed var(--black);
+}
+
+.gameBTNs{
+  height: 7vh;
+  width: 7vh;
+  border: 3px dashed transparent;
+  border-radius: 100%;
+  padding: 5px;
+  margin: 25px 10px 25px 10px;
+}
+
+
+
+.CoNTaCTuS{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5vh 0px 5vh 0px;
+}
+
+.cusimg{
+  cursor: pointer;
+  height: 7vh;
+  width: 7vh;
+
+}
+
+.HeaDiNGMaiN{
+  font-size: 3vh;
+  margin: 15px 20px 20px 20px;
+  text-align: center;
+}
+
+
+
+.BLaCKDiV{
+  padding: 10px 0px 10px 0px;
+  background: var(--black);
+  color: var(--white);
+  margin-top: 80px;
+}
+
+
+.HeaDdEtail::selection{
+  background: var(--white);
+  color: var(--black);
+}
+
+
+
+.HeaDdEtail{
+  font-size: 3vh;
+  margin: 15px 20px 20px 20px;
+  word-break: break-all;
+}
+
+.HeaDnAmE{
+  font-size: 5vh;
+  margin: 15px 0px 20px 0px;
+}
+
+.HeaDnAmE:hover{
+  text-shadow: 4px 4px 7px grey;
+  transition: 1s;
+  cursor: pointer;
+  }
+  
+
+.FraMeEe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px ;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.MaiNProfileImg{
+height: 20vh;
+width: 20vh;
+border-radius: 100%;
+padding: 6px;
+border: 5px solid transparent;
+cursor: pointer;
+}
+
+.MaiNProfileImg:hover{
+border: 4px solid var(--black);
+}
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+font-family: 'Julius Sans One', sans-serif; */
+
+
+
+
+.ReALNamEbOX{
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+.NamEbOX{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+::selection{
+  background: var(--purple);
+  color: var(--white);
+}
+
+.InNeRtExT{
+  font-weight: 700;
+  color: var(--black);  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.InpuTNuM{
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 3px groove var(--black);
+  margin-bottom: 20px;
+
+}
+
+.InpuTnAmE{
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 3px groove var(--black);
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.NavBtn2{
+  background: linear-gradient(to bottom, grey,#cacaca);
+  border: none;
+  border-radius: none;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+
+input:focus{
+  outline: none
+}
+
+
+.SaYsHeLlO{
+  font-size: 2rem;  margin: 20px 5px 60px 5px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.MessAgeBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.MessAgeBoxOUTER{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.MessAgeBox{
+  border: 1px solid var(--black);
+  width: 80vw;
+  padding: 0px 10px 10px 10px;
+}
+
+.TiTlEbAR{
+  background: var(--black);
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  }
+
+.ClosEMessaGe{
+  cursor: pointer;
+}
+
+.PoPuPTiTLE{
+  color: white;
+  text-shadow: 1px 1px 3px white;  margin-left: 5px;
+}
+
+
+
+.MainBtnBoX{
+  position: absolute;
+  right: 15px;
+}
+
+
+.ShowHideNaV{
+  display: none;
+}
+
+
+
+.HoverEdMenU{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.NaVMeNu{
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  right: 5vw;
+  display: none;
+}
+
+
+.NaVMeNu2{
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+
+
+
+.NavBtn{
+  border: none;
+  border-radius: 0;
+  padding: 5px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.NavBtn:hover{
+  background: white;
+  color: black;
+}
+
+.NavBtn1:hover{
+  background: white;
+  color: black;
+}
+
+
+.NavBtnBorder{
+  border: 2px dashed transparent;
+  display: inline;
+  padding: 8px 1px 8px 5px;
+}
+
+.NavBtnBorder:hover{
+  border: 2px dashed white;
+  cursor: pointer;
+}
+
+
+
+.NavBtnBorder1{
+  border: 2px dashed transparent;
+  display: inline;
+  padding: 8px 1px 8px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.NavBtn1{
+width: 21vw;
+border: none;
+border-radius: 0;
+padding: 5px;
+background: white;
+color: black;
+cursor: pointer;
+}
+
+.NavBtnBorder1:hover{
+  border: 2px dashed black;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+/* new */
+  #coin div {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+       -moz-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+            box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+  }
+
+  
+  #coin {
+    transition: -webkit-transform 1s ease-in;
+    -webkit-transform-style: preserve-3d;
+  }
+  #coin div {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+  }
+
+  
+  #coin.heads {
+    -webkit-animation: flipHeads 3s ease-out forwards;
+    -moz-animation: flipHeads 3s ease-out forwards;
+      -o-animation: flipHeads 3s ease-out forwards;
+         animation: flipHeads 3s ease-out forwards;
+  }
+  #coin.tails {
+    -webkit-animation: flipTails 3s ease-out forwards;
+    -moz-animation: flipTails 3s ease-out forwards;
+      -o-animation: flipTails 3s ease-out forwards;
+         animation: flipTails 3s ease-out forwards;
+  }
+  
+  @-webkit-keyframes flipHeads {
+    from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+    to { -webkit-transform: rotateY(1800deg); -moz-transform: rotateY(1800deg); transform: rotateY(1800deg); }
+  }
+  @-webkit-keyframes flipTails {
+    from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+    to { -webkit-transform: rotateY(1980deg); -moz-transform: rotateY(1980deg); transform: rotateY(1980deg); }
+  }
+  
