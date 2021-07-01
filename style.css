@@ -400,7 +400,8 @@ border: 3px dashed var(--black);
 .HeaDdEtail{
   font-size: 3vh;
   margin: 15px 20px 20px 20px;
-  word-break: break-all;
+  word-break: keep-all;
+    text-align: center;
 }
 
 .HeaDnAmE{
