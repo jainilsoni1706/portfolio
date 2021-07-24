@@ -398,8 +398,8 @@ border: 3px dashed var(--black);
 
 
 .HeaDdEtail{
-  font-size: 3vh;
-  margin: 15px 20px 20px 20px;
+  font-size: 100%;
+  margin: 15px 25px 25px 25px;
   word-break: keep-all;
     text-align: justify;
 }
