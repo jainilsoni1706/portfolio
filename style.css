@@ -3,7 +3,7 @@ body{
     margin: 0;
     background: linear-gradient(to right,#5000ca,#000b76);
     font-family: 'Cinzel', serif;
-    /* animation: LoadingScreen 10s 1; */
+     animation: LoadingScreen 10s 1; 
     
 
 }
