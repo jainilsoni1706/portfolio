@@ -148,22 +148,54 @@ PrimE = () =>{
 
 
 
-var PrimeNO = document.querySelector('.PrimeNoGame').value;
+// var PrimeNO = document.querySelector('.PrimeNoGame').value;
 
 
-if(PrimeNO==2 || PrimeNO==3){
-  document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is a Prime Number";
+// if(PrimeNO==2 || PrimeNO==3){
+//   document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is a Prime Number";
+// }
+
+// else if(PrimeNO%2==0 || PrimeNO%3==0){
+// document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is not a Prime Number";
+// }
+
+
+// else{
+//     document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is a Prime Number";
+// }
+
+	
+	
+
+const number = parseInt(prompt("Enter a positive number: "));
+let isPrime = true;
+
+if (number === 1) {
+	document.querySelector('.AnswerOfGame').innerHTML = number + " is a Prime Number";
 }
 
-else if(PrimeNO%2==0 || PrimeNO%3==0){
-document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is not a Prime Number";
+else if (number > 1) {
+
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+document.querySelector('.AnswerOfGame').innerHTML = number + " is a Prime Number";
+    } else {
+        document.querySelector('.AnswerOfGame').innerHTML = number + " is not Prime Number";
+    }
 }
 
-
-else{
-    document.querySelector('.AnswerOfGame').innerHTML = PrimeNO + " is a Prime Number";
+else {
+    console.log("The number is not a Prime Number");
 }
-
+	
+	
+	
 }
 
 
